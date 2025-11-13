@@ -23,7 +23,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
             <img
-              src="dist/assets/iran-peugeot-pars-elx-official-car-of-v0-7ma32v4g82fa1.webp"
+              src="assets/iran-peugeot-pars-elx-official-car-of-v0-7ma32v4g82fa1.webp"
               alt="نمایشگاه خودرو"
               className="rounded-2xl shadow-2xl w-[full] h-[500px] object-cover"
             />
