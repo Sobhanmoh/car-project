@@ -73,6 +73,8 @@ export default function Footer() {
         <div className="border-t border-slate-800 pt-8 text-center">
           <p className="text-gray-400">
             © {new Date().getFullYear()} نمایشگاه مراغه خودرو. تمامی حقوق محفوظ است.
+            <br />
+            •Developed by Sobhan Mohseni•
           </p>
         </div>
       </div>

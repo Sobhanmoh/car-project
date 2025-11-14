@@ -40,7 +40,7 @@ export default function CarsSection() {
 
   if (loading) {
     return (
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white" >
         <div className="container mx-auto px-4">
           <div className="flex justify-center items-center py-20">
             <Loader2 className="w-10 h-10 animate-spin text-blue-600" />
