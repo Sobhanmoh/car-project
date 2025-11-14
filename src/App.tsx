@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -6,6 +7,7 @@ import CarsSection from './components/CarsSection';
 import AboutSection from './components/AboutSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import CarDetails from './components/CarDetails';
 
 function App() {
   const carsRef = useRef<HTMLDivElement>(null);
@@ -35,7 +37,8 @@ function App() {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  return (
+  // کامپوننت صفحه اصلی
+  const HomePage = () => (
     <div className="min-h-screen bg-white">
       <Header onNavigate={handleNavigate} />
       <div ref={homeRef}>
@@ -53,6 +56,24 @@ function App() {
       </div>
       <Footer />
     </div>
+  );
+
+  // کامپوننت صفحه جزئیات ماشین
+  const CarDetailsPage = () => (
+    <div className="min-h-screen bg-white">
+      <Header onNavigate={handleNavigate} />
+      <CarDetails />
+      <Footer />
+    </div>
+  );
+
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/car/:id" element={<CarDetailsPage />} />
+      </Routes>
+    </Router>
   );
 }
 
