@@ -25,7 +25,7 @@ export default function AboutSection() {
             <img
               src="/assets/iran-peugeot-pars-elx-official-car-of-v0-7ma32v4g82fa1.webp"
               alt="نمایشگاه خودرو"
-              className="rounded-2xl shadow-2xl w-[full] h-[500px] object-cover"
+              className="rounded-2xl shadow-2xl w-[full] h-[auto] object-cover"
             />
           </div>
 
