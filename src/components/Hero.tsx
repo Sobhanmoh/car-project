@@ -35,7 +35,7 @@ export default function Hero({ onNavigate }: HeroProps) {
             </button>
             <button
               onClick={() => onNavigate('contact')}
-              className="bg-transparent border-2 border-white hover:bg-white hover:text-slate-900 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all"
+              className="bg-white/10 backdrop-blur-lg border border-white/30 shadow-[0_18px_40px_rgba(255,0,0,0.4)] container mx-auto px-4 py-4"
             >
               تماس با ما
             </button>

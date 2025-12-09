@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { supabase, Car } from "../lib/supabase";
 import { Calendar, Fuel, Settings, Palette, Loader2 } from "lucide-react";
-import { Link } from "react-router-dom"; // این خط رو اضافه کن
+import { Link } from "react-router-dom";
+import '../index.css'
 
 export default function CarsSection() {
   const [cars, setCars] = useState<Car[]>([]);

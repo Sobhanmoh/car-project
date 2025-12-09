@@ -16,7 +16,6 @@ export default function CarDetails() {
 
   const fetchCarDetails = async () => {
     try {
-      // گرفتن اطلاعات ماشین
       const { data: carData, error } = await supabase
         .from('cars')
         .select('*')
@@ -29,7 +28,6 @@ export default function CarDetails() {
       if (error) throw error;
       setCar(carData);
 
-      // گرفتن ماشین‌های مشابه
       const { data: similarData } = await supabase
         .from('cars')
         .select('*')
